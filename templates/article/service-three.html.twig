@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!{% endblock %}
+
+{% block body %}
+    <div id="container">
+        <h1>Service 3</h1>
+        <div>
+            <ul id="list">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/article/service-one">Service 1</a></li>
+                <li><a href="/article/service-two">Service 2</a></li>
+            </ul>
+        </div>
+        {% for article in articles.articles %}
+            <div id="article">
+                <h2>{{ article.title }}</h2>
+                <img src="{{ article.urlToImage }}" alt="" width="500px">
+                <p>{{ article.description }}</p>
+                <a href="{{ article.url }}">Lien vers l'article</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

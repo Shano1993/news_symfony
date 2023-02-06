@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+html {
+  font-size: 62.5%;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+#article {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 2rem;
+  width: 45%;
+  border: 0.1rem solid black;
+  background-color: #B0413E;
+  color: #e0e0e0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #FFFFFF;
+}
+
+#list > li {
+  padding: 2rem;
+}
+
